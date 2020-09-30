@@ -7,15 +7,15 @@ s = input().strip()
 t = input().strip()
 k = int(input().strip())
 
-lead = 0
+l= 0
 for i in range(min(len(s),len(t))):
     if s[i] != t[i]:
-        lead = i
+        l = i
         break
     else:
-        lead = i + 1
+        l = i + 1
         
-d = len(s) - lead + len(t) - lead
+d = len(s) - l + len(t) - l
 
 if k >= len(s) + len(t):
     print("Yes")
