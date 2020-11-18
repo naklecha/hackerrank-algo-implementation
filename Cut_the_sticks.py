@@ -3,14 +3,14 @@
 import sys
 
 
-n = int(raw_input().strip())
-arr = map(int,raw_input().strip().split(' '))
-while len(arr) > 0:
-    print len(arr)
-    m = min(arr)
+n = int(input().strip())
+a = map(int,input().strip().split(' '))
+while len(a) > 0:
+    print len(a)
+    m = min(a)
     l = []
-    for i in arr:
+    for i in a:
         j = i-m
         if j != 0:
             l += [j]
-    arr = l
+    a = l
